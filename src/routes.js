@@ -8,7 +8,7 @@ Vue.use(Router)
 import Home from '@/pages/Home'
 import Users from '@/pages/Users'
 import NotFound from '@/pages/404'
-
+import NotifyPage from '@/pages/NotifyPage'
 
 // Routering
 export default new Router({
@@ -22,6 +22,11 @@ export default new Router({
       path: '/users',
       name: 'users',
       component: Users
+    },
+    {
+      path: '/notify',
+      name: 'notifyPage',
+      component: NotifyPage
     },
     {
       path: '/*',
